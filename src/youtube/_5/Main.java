@@ -10,8 +10,17 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String text = sc.next();
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        char[] arr;
+        arr = text.toCharArray();
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] >= 'a' && arr[i] <= 'z') {
+                Character.toUpperCase(arr[i]);
+            }else{
+                Character.toLowerCase(arr[i]);
+            }
+        }
+        System.out.println("arr = " + arr);
     }
 
 }
