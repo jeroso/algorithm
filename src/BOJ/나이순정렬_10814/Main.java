@@ -11,7 +11,8 @@ public class Main {
         String[][] arr = new String[n][2];
 
         for (int i = 0; i < arr.length; i++) {
-            String[] strings = arr[i];
+            arr[i][0] = sc.next();
+            arr[i][1] = sc.next();
 
         }
         Arrays.sort(arr, new Comparator<String[]>() {
