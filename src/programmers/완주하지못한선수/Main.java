@@ -2,38 +2,24 @@ package programmers.완주하지못한선수;
 
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
-        String[] participant = {"marina", "josipa", "nikola", "vinko", "filipa"};
-        String[] completion = {"josipa", "filipa", "marina", "nikola"};
-//        Solution(participant, completion);
-        Arrays.sort(participant);
-        Arrays.sort(completion);
-        System.out.println("participant");
-        System.out.println(Arrays.toString(participant));
-        System.out.println("completion");
-        System.out.println(Arrays.toString(completion));
+        List<String> participant = Arrays.asList("leo", "kiki", "eden");
+        List<String> completion = Arrays.asList("eden", "kiki");
+
+        System.out.println(Solution(participant, completion));
     }
 
-    public static String Solution(String[] participant, String[] completion) {
-        String answer = "";
-        int val = 0;
-
-        Map<String, Integer> hm = new HashMap<>();
-
-        for(String part : participant){
-            if(hm.get(part) == null) {
-                hm.put(part, 1);
-            }else{
-                val = hm.get(part) + 1;
-                hm.put(part, val);
-            }
-        }
-        System.out.println("hashMap");
-        System.out.println(hm.entrySet());
-
-        return answer;
+    public static List<String> Solution(List<String> participant, List<String> completion) {
+        List<String> res = participant.stream()
+                .sorted()
+                        .filter(list -> completion.stream().sorted().noneMatch(Predicate.isEqual(list)))
+                                .collect(Collectors.toList());
+        return res;
     }
 }
