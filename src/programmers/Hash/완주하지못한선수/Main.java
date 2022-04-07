@@ -1,10 +1,6 @@
-package programmers.완주하지못한선수;
-
-import programmers.Hash.위장.Solution;
+package programmers.Hash.완주하지못한선수;
 
 import java.util.*;
-import java.util.function.Predicate;
-import java.util.stream.Collectors;
 
 public class Main {
     public String solution(String[] participant, String[] completion) {
