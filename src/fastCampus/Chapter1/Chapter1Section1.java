@@ -12,7 +12,6 @@ public class Chapter1Section1 {
 
     static void input(){
         FastReader scan = new FastReader();
-        N = scan.next
     }
     static int N, M;
     static int[] selected;
