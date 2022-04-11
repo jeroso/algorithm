@@ -1,4 +1,4 @@
-package programmers.Hash.완주하지못한선수;
+package programmers.practice_kit.Hash.완주하지못한선수;
 
 import java.util.*;
 

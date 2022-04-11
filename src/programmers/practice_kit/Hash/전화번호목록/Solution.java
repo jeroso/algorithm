@@ -1,6 +1,5 @@
-package programmers.Hash.전화번호목록;
+package programmers.practice_kit.Hash.전화번호목록;
 
-import java.util.Arrays;
 import java.util.HashMap;
 
 // 1. Loop 만 사용 => 시간낭비
