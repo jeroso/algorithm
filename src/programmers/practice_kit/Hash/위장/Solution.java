@@ -1,4 +1,4 @@
-package programmers.Hash.위장;
+package programmers.practice_kit.Hash.위장;
 
 import java.util.HashMap;
 

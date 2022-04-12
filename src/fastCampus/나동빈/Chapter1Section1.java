@@ -18,4 +18,10 @@ public class Chapter1Section1 {
 
     }
 
+
+    //전구 개수
+    static int N;
+    //입력되는 명령어 개수
+    static int M;
+
 }
