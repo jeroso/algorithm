@@ -5,31 +5,31 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Solution {
-    public List<Integer> soultion(int[] progresses, int[] speeds) {
-        //  song solution
-        int[] days = new int[progresses.length];
-        for (int i = 0; i < progresses.length; i++) {
-            if ((100 - progresses[i]) % speeds[i] > 0) {
-                days[i] = ((100 - progresses[i]) / speeds[i]) + 1;
-            } else {
-                days[i] = (100 - progresses[i]) / speeds[i];
-            }
-        }
-        List<Integer> list = new ArrayList<>();
-        int cnt = 0;
-        list.add(1);
-        int pivot = days[0];
-        for (int i = 1; i < days.length; i++) {
-            if (days[i] > pivot) {
-                cnt++;
-                list.add(1);
-                pivot = days[i];
-            } else {
-                list.set(cnt, list.get(cnt) + 1);
-            }
-        }
-        return list;
-    }
+//    public List<Integer> soultion(int[] progresses, int[] speeds) {
+//        //  song solution
+//        int[] days = new int[progresses.length];
+//        for (int i = 0; i < progresses.length; i++) {
+//            if ((100 - progresses[i]) % speeds[i] > 0) {
+//                days[i] = ((100 - progresses[i]) / speeds[i]) + 1;
+//            } else {
+//                days[i] = (100 - progresses[i]) / speeds[i];
+//            }
+//        }
+//        List<Integer> list = new ArrayList<>();
+//        int cnt = 0;
+//        list.add(1);
+//        int pivot = days[0];
+//        for (int i = 1; i < days.length; i++) {
+//            if (days[i] > pivot) {
+//                cnt++;
+//                list.add(1);
+//                pivot = days[i];
+//            } else {
+//                list.set(cnt, list.get(cnt) + 1);
+//            }
+//        }
+//        return list;
+//    }
 
     /**
      * 람다식 풀이
@@ -55,6 +55,6 @@ public class Solution {
         int[] speed = {1, 30, 5};
 //        int[] speed = {1, 1, 1, 1, 1, 1};
         Solution sol = new Solution();
-        System.out.println(sol.soultion(progresses, speed));
+        System.out.println(sol.result(progresses, speed));
     }
 }
