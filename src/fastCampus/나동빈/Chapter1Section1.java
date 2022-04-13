@@ -6,6 +6,7 @@ import java.util.StringTokenizer;
 
 public class Chapter1Section1 {
 
+
     static StringBuilder sb = new StringBuilder();
 
 
@@ -16,6 +17,7 @@ public class Chapter1Section1 {
     static void rec_func(){
 
     }
+
 
     //전구 개수
     static int N;
