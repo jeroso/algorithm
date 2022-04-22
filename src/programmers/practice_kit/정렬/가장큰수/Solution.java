@@ -15,12 +15,14 @@ public class Solution {
         for (int i = 0; i < numbers.length; i++) {
             str[i] = String.valueOf(numbers[i]);
         }
+        System.out.println(Arrays.toString(str));
         Arrays.sort(str, new Comparator<String>() {
             @Override
             public int compare(String o1, String o2) {
                 return (o2 + o1).compareTo(o1 + o2);
             }
         });
+        System.out.println(Arrays.toString(str));
         String answer = "";
         if (str[0].equals("0")) return "0";
 
