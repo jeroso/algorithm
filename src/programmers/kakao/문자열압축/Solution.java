@@ -1,4 +1,4 @@
-package programmers.문자열압축;
+package programmers.kakao.문자열압축;
 
 public class Solution {
     public int solution(String s) {
