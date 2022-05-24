@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
+//전구
 public class Chapter1Section1 {
     static StringBuilder sb = new StringBuilder();
 
@@ -25,7 +26,18 @@ public class Chapter1Section1 {
     public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String[] str = br.readLine().split(" ");
-        System.out.println(Arrays.toString(str));
+        int[] answer = new int[Integer.parseInt(str[0])];
+
+        int a, b, c;
+
+        Arrays.fill(answer, 0);
+        for (int i : answer) {
+            System.out.printf(i + " ");
+        }
+        for (int i = 0; i < Integer.parseInt(str[1]); i++) {
+            String[] type = br.readLine().split(" ");
+
+        }
     }
 
 
