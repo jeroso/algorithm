@@ -61,6 +61,6 @@ public class MergeSort {
 
     public static void main(String[] args) {
         MergeSort ms = new MergeSort();
-        ArrayList<Integer> integers = ms.splitFunc(new ArrayList<Integer>(Arrays.asList(4, 1, 2, 3, 5, 7, 9)));
+        ms.splitFunc(new ArrayList<Integer>(Arrays.asList(4, 1, 2, 3, 5, 7, 9)))
     }
 }
