@@ -14,6 +14,7 @@ public class Main_10809 {
         s = br.readLine();
         Arrays.fill(arr, -1);
         for (int i = 0; i < s.length(); i++) {
+            // 97 or 'a'
             if(arr[s.charAt(i) - 97] != -1) continue;
             arr[s.charAt(i) - 97] = i;
         }
