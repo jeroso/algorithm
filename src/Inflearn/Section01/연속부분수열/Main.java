@@ -12,17 +12,13 @@ import java.util.StringTokenizer;
 public class Main {
     public int Solution(int[] arr, int ans) {
         int answer = 0, sum = 0;
-        int p1 = 0, p2 = 0;
-        sum = arr[p1];
-        while (p1 < arr.length-1 && p2 < arr.length-1) {
-            if (sum == ans) {
-                answer++;
-                sum = arr[++p1];
-                p2 = p1;
-            } else if (sum < ans) { //합보다 작을 때 p2 이동 후 값 더함
-                sum += arr[++p2];
-            }else{  //합보다 클땐 p1값 뺀 후 p1 이동
-                sum -= arr[p1++];
+        int lt = 0;
+        for (int rt = 0; rt < arr.length; rt++) {
+            sum+=arr[rt];
+            if(sum==ans) answer++;
+            while(sum>=ans){
+                sum-=arr[lt++];
+                if(sum==ans) answer++;
             }
         }
         return answer;
