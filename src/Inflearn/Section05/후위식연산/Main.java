@@ -22,9 +22,8 @@ public class Main {
                 else if (c == '*') stack.push(lt * rt);
                 else if (c == '/') stack.push(lt / rt);
             }
-            answer = stack.get(0);
         }
-
+        answer = stack.get(0);
         return answer;
     }
 
@@ -33,6 +32,7 @@ public class Main {
 
         String next = scan.next();
         Main main = new Main();
-        main.Solution(next);
+        int solution = main.Solution(next);
+        System.out.println(solution);
     }
 }
