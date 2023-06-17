@@ -20,6 +20,7 @@ gen
 build
 rebel.xml
 /out
+*.class
 
 # Compliled files
 /target/
@@ -31,7 +32,4 @@ rebel.xml
 .gradle
 /build/
 .gradletasknamecache
-
-# out
-
 
