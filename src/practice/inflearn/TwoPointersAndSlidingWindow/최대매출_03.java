@@ -3,7 +3,7 @@ package practice.inflearn.TwoPointersAndSlidingWindow;
 import java.util.Scanner;
 
 public class 최대매출_03 {
-    //내가 푼 방법
+    //내가 푼 방법 > 타임아웃 발생
     public int solution(int n, int m, int[] arr) {
         int answer = 0;
 
