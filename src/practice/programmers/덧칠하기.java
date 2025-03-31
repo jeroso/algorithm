@@ -1,7 +1,5 @@
 package practice.programmers;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class 덧칠하기 {
 
