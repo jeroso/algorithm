@@ -1,4 +1,4 @@
-package practice.inflearn.sorting;
+package practice.inflearn.sortingAndSearching;
 
 import java.util.ArrayList;
 import java.util.List;
