@@ -32,7 +32,7 @@ rebel.xml
 .gradle
 /build/
 .gradletasknamecache
-
+aws.xml
 # out
 
 
