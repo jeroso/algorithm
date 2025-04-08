@@ -1,6 +1,4 @@
-package practice.programmers;
-
-import java.util.Arrays;
+package practice.programmers.level1;
 
 public class 자연수뒤집어_배열만들기 {
     //내가 푼 방식

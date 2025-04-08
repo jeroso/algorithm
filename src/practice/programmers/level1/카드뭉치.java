@@ -1,4 +1,4 @@
-package practice.programmers;
+package practice.programmers.level1;
 
 //https://school.programmers.co.kr/learn/courses/30/lessons/159994
 public class 카드뭉치 {

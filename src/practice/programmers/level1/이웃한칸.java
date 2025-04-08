@@ -1,4 +1,4 @@
-package practice.programmers;
+package practice.programmers.level1;
 //https://school.programmers.co.kr/learn/courses/30/lessons/250125
 public class 이웃한칸 {
     // 내가 푼 방법

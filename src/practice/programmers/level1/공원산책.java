@@ -1,4 +1,4 @@
-package practice.programmers;
+package practice.programmers.level1;
 
 //https://velog.io/@se_bb/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4Java-%EA%B3%B5%EC%9B%90-%EC%82%B0%EC%B1%85
 public class 공원산책 {

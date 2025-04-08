@@ -1,8 +1,4 @@
-package practice.programmers;
-
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
+package practice.programmers.level1;
 
 //https://school.programmers.co.kr/learn/courses/30/lessons/340199
 public class 지폐접기 {

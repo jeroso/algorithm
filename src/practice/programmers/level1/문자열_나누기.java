@@ -1,7 +1,4 @@
-package practice.programmers;
-
-import java.util.HashMap;
-import java.util.Map;
+package practice.programmers.level1;
 
 //https://school.programmers.co.kr/learn/courses/30/lessons/140108
 public class 문자열_나누기 {

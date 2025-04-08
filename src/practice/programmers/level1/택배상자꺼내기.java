@@ -1,6 +1,4 @@
-package practice.programmers;
-
-import java.util.Scanner;
+package practice.programmers.level1;
 
 //https://school.programmers.co.kr/learn/courses/30/lessons/389478
 public class 택배상자꺼내기 {

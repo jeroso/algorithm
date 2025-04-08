@@ -1,4 +1,4 @@
-package practice.programmers;
+package practice.programmers.level1;
 
 //https://school.programmers.co.kr/learn/courses/30/lessons/147355
 public class 크기가작은_부분문자열 {
