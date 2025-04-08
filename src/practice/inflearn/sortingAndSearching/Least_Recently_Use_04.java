@@ -4,6 +4,7 @@ package practice.inflearn.sortingAndSearching;
 import java.util.*;
 
 public class Least_Recently_Use_04 {
+    //내가 푼 방식
     public List<Integer> solution(int n, int m, int[] arr) {
         List<Integer> answer = new ArrayList<>();
         for (int i = 0; i < m; i++) {
@@ -18,6 +19,29 @@ public class Least_Recently_Use_04 {
             }
         }
         Collections.reverse(answer);
+        return answer;
+    }
+
+    //강의에서 푼 방식
+    public int[] solution2(int n, int m, int[] arr) {
+        int[] answer = new int[n];
+        for (int i : arr) {
+            int pos = -1;
+            for (int j = 0; j < n; j++) {
+                if(i == answer[i]) pos = i;
+            }
+            if (pos == -1) {
+                for (int j = n -1; j >= 1 ; j--) {
+                    answer[j] = answer[j - 1];
+                }
+                answer[0] = i;
+            } else {
+                for (int j = pos; j >= 1; j--) {
+                    answer[j] = answer[j - 1];
+                }
+                answer[0] = i;
+            }
+        }
         return answer;
     }
 
